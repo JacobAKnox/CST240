@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# By Jacob Knox
+# for CST240 Lab 2 due: 1/25/2022
+
 # make sure there is one argument
 if [ $# -ne 1 ]; then
     echo "Usage: $0 temprature[C,c,F,f]"
