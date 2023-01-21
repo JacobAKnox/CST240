@@ -1,0 +1,22 @@
+~/Documents/CST240/Lab1$ ./temp 
+Enter string with integer appended by \0 or a single charcter: asfd
+Wrong input, must be integer appended by \0 or a single charcter
+~/Documents/CST240/Lab1$ ./temp 
+Enter string with integer appended by \0 or a single charcter: 1234
+Celsius degree is 1234
+Fahrenheit degree is 2253
+~/Documents/CST240/Lab1$ ./temp 
+Enter string with integer appended by \0 or a single charcter: 100
+Celsius degree is 100
+Fahrenheit degree is 212
+~/Documents/CST240/Lab1$ ./temp 
+Enter string with integer appended by \0 or a single charcter: 100k
+Enter C for Celsius, F for Fahrenheit: k
+Wrong character, must enter C for Celsius, F for Fahrenheit: C
+Celsius degree is 100
+Fahrenheit degree is 212
+~/Documents/CST240/Lab1$ ./temp
+Enter string with integer appended by \0 or a single charcter: 100k
+Enter C for Celsius, F for Fahrenheit: F
+Celsius degree is 37
+Fahrenheit degree is 100

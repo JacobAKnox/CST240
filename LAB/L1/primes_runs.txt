@@ -1,0 +1,7 @@
+~/Documents/CST240/Lab1$ ./primes three
+Input value must be a integer ("123", "333", etc.) and positive
+~/Documents/CST240/Lab1$ ./primes 120
+ONE TWO ZERO is NOT Prime!
+~/Documents/CST240/Lab1$ ./primes 1031
+ONE ZERO THREE ONE IS Prime!
+~/Documents/CST240/Lab1$ 
