@@ -4,3 +4,4 @@
 *.old
 *.zip
 */.vscode
+*makefile

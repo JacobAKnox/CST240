@@ -1,0 +1,34 @@
+~/Documents/CST240/LAB/L2$ ./temp_conv.sh 32T
+T
+32
+Input temp not correct
+~/Documents/CST240/LAB/L2$ ./temp_conv.sh 32
+32
+Farhenheit = 32
+Celsius = 0
+~/Documents/CST240/LAB/L2$ ./temp_conv.sh 32c
+32
+C
+Celsius = 32
+Farhenheit = 89
+~/Documents/CST240/LAB/L2$ ./temp_conv.sh 32C
+32
+C
+Celsius = 32
+Farhenheit = 89
+~/Documents/CST240/LAB/L2$ ./temp_conv.sh 32f
+32
+F
+Celsius = 0
+Farhenheit = 32
+~/Documents/CST240/LAB/L2$ ./temp_conv.sh 32F
+32
+F
+Celsius = 0
+Farhenheit = 32
+~/Documents/CST240/LAB/L2$ ./temp_conv.sh 
+Usage: ./temp_conv.sh temprature[C,c,F,f]
+where the suffix is:
+  f/F for Farhenheit (default if no f/F, c/C or space)
+  c/C for Celsius
+~/Documents/CST240/LAB/L2$ 
