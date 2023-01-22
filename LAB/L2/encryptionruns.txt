@@ -1,0 +1,18 @@
+//using sample files included in zip
+
+~/Documents/CST240/LAB/L2$ ./encryption
+Usage: ./ecryption <filename>
+
+~/Documents/CST240/LAB/L2$ ./encryption nothere.txt
+Could not open file nothere.txt
+
+./encryption Lab2_sample.txt
+Enter key, a number between 0 and 25: 77
+Key must be between 0 and 25: f
+Key must be between 0 and 25: 5
+From Ceaser: HXYYBTKTZWEJWT
+After Rail Fence: HYBKZEWXYTTWJT
+
+~/Documents/CST240/LAB/L2$ cat cipher.txt 
+HYBKZEWXYTTWJT~/Documents/CST240/LAB/L2$ 
+
