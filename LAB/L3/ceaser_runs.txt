@@ -1,0 +1,37 @@
+Jacob K Lab 3 CST 240 due 2/1/2022
+
+~/Documents/CST240/LAB/L3$ ./cearer.pl 10 RichesIHold.txt
+Encryption complete. Cipher text in cipher.txt
+~/Documents/CST240/LAB/L3$ cat cipher.txt 
+smrocryvnsxvsqrdocdoow
+xnyfovkeqrdycmybx
+xnvecdypkwogkcledknbokw
+rkdfkxscrongsdrdrowybx
+
+xnspzbkidroyxvizbkiob
+rkdwyfocwivszcpybwo
+cokfodrorokbddrkdxyglokb
+xnqsfowovslobdi
+
+ockcwicgspdnkicxokbdrosbqykv
+sckvvdrkdswzvybo
+rbyeqrvspokxnnokdrkmrksxvocccyev
+sdrmyebkqodyoxnebo
+
+
+~/Documents/CST240/LAB/L3$ ./cearer.pl 10
+Usage: perl caesar.pl key filename
+~/Documents/CST240/LAB/L3$ ./cearer.pl file.txt
+Usage: perl caesar.pl key filename
+~/Documents/CST240/LAB/L3$ ./cearer.pl 10 not_here.txt
+Could not open file 'not_here.txt' No such file or directory
+~/Documents/CST240/LAB/L3$ ./cearer.pl -3 not_here.txt
+Key must be between 0 and 25
+~/Documents/CST240/LAB/L3$ ./cearer.pl 0 not_here.txt
+Could not open file 'not_here.txt' No such file or directory
+~/Documents/CST240/LAB/L3$ ./cearer.pl 25 not_here.txt
+Could not open file 'not_here.txt' No such file or directory
+~/Documents/CST240/LAB/L3$ ./cearer.pl 26 not_here.txt
+Key must be between 0 and 25
+~/Documents/CST240/LAB/L3$ ./cearer.pl 300 not_here.txt
+Key must be between 0 and 25

@@ -1,0 +1,38 @@
+Jacob Knox CST240 Lab 3 due 2/1/2022
+
+~/Documents/CST240/LAB/L3$ ./railfence.pl 5 RichesIHold.txt 
+Encryption complete. Cipher text in cipher.txt
+~/Documents/CST240/LAB/L3$ cat cipher.txt 
+ideclitshonhtehlgemsie
+ngnduhroatovloces
+natdfmualoebdmutwsrasae
+hhhasetetidhmvnwtonair
+
+ntrdyhpaiaeyyfrolepnr
+hmrasyomtelfemvisop
+shteeeanrahahoavtrtweetb
+nldeigmbyieetvr
+
+eiegswfnaroastsriasydytelmah
+itsaieahmrltpoll
+hftlrieahnelolaeaisuuhndcasogdhs
+igrtaeuehrtdcuonoe
+
+
+~/Documents/CST240/LAB/L3$ ./railfence.pl 
+Usage: perl railfence.pl key filename
+~/Documents/CST240/LAB/L3$ ./railfence.pl 10
+Usage: perl railfence.pl key filename
+~/Documents/CST240/LAB/L3$ ./railfence.pl file.txt
+Usage: perl railfence.pl key filename
+~/Documents/CST240/LAB/L3$ ./railfence.pl 10 not_here.txt
+Could not open file 'not_here.txt' No such file or directory
+~/Documents/CST240/LAB/L3$ ./railfence.pl w not_here.txt
+Key must be a positiive integer
+~/Documents/CST240/LAB/L3$ ./railfence.pl -3 not_here.txt
+Key must be a positiive integer
+~/Documents/CST240/LAB/L3$ ./railfence.pl 0 not_here.txt
+Key must be a positiive integer
+~/Documents/CST240/LAB/L3$ ./railfence.pl 2 not_here.txt
+Could not open file 'not_here.txt' No such file or directory
+~/Documents/CST240/LAB/L3$ 
