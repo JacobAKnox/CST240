@@ -1,0 +1,72 @@
+$ ./ceaser.sh 10 RichesIHold.txt 
+smrocryvnsxvsqrdocdoow
+xnyfovkeqrdycmybx
+xnvecdypkwogkcledknbokw
+rkdfkxscrongsdrdrowybx
+
+xnspzbkidroyxvizbkiob
+rkdwyfocwivszcpybwo
+cokfodrorokbddrkdxyglokb
+xnqsfowovslobdi
+
+ockcwicgspdnkicxokbdrosbqykv
+sckvvdrkdswzvybo
+rbyeqrvspokxnnokdrkmrksxvocccyev
+sdrmyebkqodyoxnebo
+
+Errors and bounds:
+$ ./ceaser.sh 
+Usage: ./ceaser.sh <key(1-25)> <file>
+
+$ ./ceaser.sh 0 file.txt file.txt
+Usage: ./ceaser.sh <key(1-25)> <file>
+
+$ ./ceaser.sh a RichesIHold.txt 
+Key must be a number
+
+$ ./ceaser.sh -7 file.txt
+Key must be between 1 and 25
+
+$ ./ceaser.sh 0 file.txt
+Key must be between 1 and 25
+
+$ ./ceaser.sh 1 RichesIHold.txt 
+jdiftipmejomjhiuftuffn
+oepwfmbvhiuptdpso
+oemvtupgbnfxbtcvubesfbn
+ibuwbojtifexjuiuifnpso
+
+oejgqsbzuifpomzqsbzfs
+ibunpwftnzmjqtgpsnf
+tfbwfuififbsuuibuopxcfbs
+oehjwfnfmjcfsuz
+
+ftbtnztxjguebztofbsuifjshpbm
+jtbmmuibujnqmpsf
+ispvhimjgfboeefbuibdibjomftttpvm
+juidpvsbhfupfoevsf
+
+$ ./ceaser.sh 25 RichesIHold.txt 
+hbgdrgnkchmkhfgsdrsddl
+mcnudkztfgsnrbnqm
+mcktrsnezldvzratszcqdzl
+gzsuzmhrgdcvhsgsgdlnqm
+
+mcheoqzxsgdnmkxoqzxdq
+gzslnudrlxkhorenqld
+rdzudsgdgdzqssgzsmnvadzq
+mcfhudldkhadqsx
+
+drzrlxrvhesczxrmdzqsgdhqfnzk
+hrzkksgzshloknqd
+gqntfgkhedzmccdzsgzbgzhmkdrrrntk
+hsgbntqzfdsndmctqd
+
+$ ./ceaser.sh 26 RichesIHold.txt 
+Key must be between 1 and 25
+
+$ ./ceaser.sh 10 nothere.txt
+File nothere.txt does not exist
+
+$ ./ceaser.sh 10 empty.txt 
+(no output)

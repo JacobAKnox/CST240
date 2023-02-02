@@ -1,0 +1,52 @@
+$ ./railfence.sh 4 RichesIHold.txt 
+ioitchllgsehsdnheeeitm
+nasdluocoegtonvhr
+noaddtfwsarlsaebtemumua
+hiimanswteotahdhhrvetn
+
+nanydryolaeipteyrrfhp
+hepeavsismtomlfrmyo
+shtoetertnwraehahtbaveae
+nmrdeeetgvlbyii
+
+esargsywdyatroamitsehiasfnel
+ihlstapoaltmrlie
+hldalurhindhcneologfaethissueaas
+iretuaonehogtdrceu
+
+Other tests
+
+$ ./railfence.sh
+Usage: ./railfence.sh <key> <file>
+
+$ ./railfence.sh 4
+Usage: ./railfence.sh <key> <file>
+
+$ ./railfence.sh 4 RichesIHold.txt RichesIHold.txt 
+Usage: ./railfence.sh <key> <file>
+
+$ ./railfence.sh a RichesIHold.txt
+Key must be a positive number
+
+$ ./railfence.sh -5 RichesIHold.txt
+Key must be a positive number
+
+$ ./railfence.sh 0 RichesIHold.txt
+Key must be greater than 0
+
+$ ./railfence.sh 1 RichesIHold.txt
+ichesholdinlightesteem
+ndovelaughtoscorn
+ndlustofamewasbutadream
+hatvanishedwiththemorn
+
+ndifpraytheonlyprayer
+hatmovesmylipsforme
+seavetheheartthatnowbear
+ndgivemeliberty
+
+esasmyswiftdaysneartheirgoal
+isallthatimplore
+hroughlifeanddeathachainlesssoul
+ithcouragetoendure
+
