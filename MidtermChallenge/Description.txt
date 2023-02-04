@@ -1,0 +1,17 @@
+Write a perl script that takes a list of words in a file, one on each line.
+It should output any words that contains digits in them to another file, but the digits should be replaced with 'x'.
+
+For example, if the input file contains:
+
+    1234
+    1234abc
+    abc1234
+    abc1234def
+    abcdef
+
+The output file should contain:
+
+    xxxx
+    xxxxabc
+    abcxxxx
+    abcxxxxdef

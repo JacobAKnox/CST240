@@ -1,0 +1,24 @@
+Succesful:
+
+$ ./script.pl input.txt output.txt
+$ cat output.txt
+xxxx
+xxxxabc
+abcxxxx
+abcxxxxdef
+$ cat input.txt
+1234
+1234abc
+abc1234
+abc1234def
+abcdef
+
+Other tests:
+$ ./script.pl 
+Usage: script.pl <input file> <output file>
+
+$ ./script.pl input.txt 
+Usage: script.pl <input file> <output file>
+
+$ ./script.pl not_here.txt ouput.txt
+Could not open file 'not_here.txt' No such file or directory
