@@ -1,0 +1,17 @@
+$ sed -i s/PHP/Perl/g input.txt
+(no output)
+(see input.txt.sed for resultant file)
+
+$ cat input.txt
+Perl is a server-side scripting language.
+Perl is an open-source language and Perl is case-senitive.
+Perl is platform-independent. Perl is faster.
+
+// I rest input.txt here
+
+$ awk '{gsub(/PHP/, "Perl"); print}' input.txt > sedoutput.txt
+$ cat sedoutput.txt 
+Perl is a server-side scripting language.
+Perl is an open-source language and Perl is case-senitive.
+Perl is platform-independent. Perl is faster.
+
