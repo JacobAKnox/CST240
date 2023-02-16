@@ -1,0 +1,51 @@
+$ ./stocks.pl 
+Enter the purchase price: 40
+Enter the current price: 80
+You made money
+Return on investment is 100%
+
+$ ./stocks.pl 
+Enter the purchase price: 40
+Enter the current price: 20
+You lost money
+Return on investment is -50%
+
+$ ./stocks.pl 
+Enter the purchase price: 1.3
+Invalid purchase price. Enter an integer
+
+$ ./stocks.pl 
+Enter the purchase price: 4
+Enter the current price: 1.3
+Invalid current price. Enter an integer
+
+$ ./stocks.pl 
+Enter the purchase price: -20
+Invalid purchase price. Enter an integer
+
+$ ./stocks.pl 
+Enter the purchase price: a
+Invalid purchase price. Enter an integer
+
+$ ./stocks.pl 
+Enter the purchase price: 5 
+Enter the current price: -20
+Invalid current price. Enter an integer
+
+$ ./stocks.pl 
+Enter the purchase price: 5
+Enter the current price: a
+Invalid current price. Enter an integer
+
+$ ./stocks.pl 
+Enter the purchase price: 0
+Enter the current price: 100
+You made money
+Return on investment is infinite%
+
+$ ./stocks.pl 
+Enter the purchase price: 100
+Enter the current price: 0
+You lost money
+Return on investment is -100%
+
