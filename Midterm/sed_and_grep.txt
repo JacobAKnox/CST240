@@ -1,0 +1,7 @@
+# see andsed.txt for resultant file
+$ sed -i 's/\b\(a\|an\|and\|A\|An\|And\)\b/also/2' ands.txt
+
+$ grep -n -E '\b(a|an|and|A|An|And)\b' ands.txt
+1:Life before smart phones was dull and harder. An unbelievable amount of time was spent
+2:with paper and pencil looking things up. What a simple Android phone can do today took
+3:hours in the library with little cards and larger books. And connecting to someone?
