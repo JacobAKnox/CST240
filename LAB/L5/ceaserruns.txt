@@ -1,0 +1,36 @@
+$ ./ceaser.py 10 RichesIHold.txt 
+smrocryvnsxvsqrdocdoow
+xnyfovkeqrdycmybx
+xnvecdypkwogkcledknbokw
+rkdfkxscrongsdrdrowybx
+
+xnspzbkidroyxvizbkiob
+rkdwyfocwivszcpybwo
+cokfodrorokbddrkdxyglokb
+xnqsfowovslobdi
+
+ockcwicgspdnkicxokbdrosbqykv
+sckvvdrkdswzvybo
+rbyeqrvspokxnnokdrkmrksxvocccyev
+sdrmyebkqodyoxnebo
+
+$ ./ceaser.py
+Usage: ceaser.py <key> <file>
+
+$ ./ceaser.py 1 
+Usage: ceaser.py <key> <file>
+
+$ ./ceaser.py file.txt
+Usage: ceaser.py <key> <file>
+
+$ ./ceaser.py 0 RichesIHold.txt 
+Key must be between 1 and 25
+
+$ ./ceaser.py 26 RichesIHold.txt 
+Key must be between 1 and 25
+
+$ ./ceaser.py a RichesIHold.txt 
+Key must be an integer
+
+$ ./ceaser.py 1 nothere.txt
+File not found

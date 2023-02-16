@@ -1,0 +1,38 @@
+Successful run:
+
+$ ./railfence.py 3 RichesIHold.txt 
+Re d hsmihsIhl nlgtetec oii e
+AL a snn oeIluht crdv goo
+Al F   rn uto aewsbtademdsfmau a
+T idthohtvnse ihtemr–aahw  n
+
+Ai yhnpen fIpa,teol ryrd r  ya
+T eypoehtmvsm isfrmao l  
+ILeeat  es"ev h er htnwIba–athtao r
+Ag lr"n iem iet.dveby
+
+Y mw sah le,a ysitdy ertergass fan io
+'  tioTsalta  mlrilhIpe
+Tul  taaeshog ieaddah  hils olrhfne,cnsu
+W r erihcuaet nuetogod!
+
+
+Tests:
+
+$ ./railfence.py 
+Usage: railfence.py <key> <filename>
+
+$ ./railfence.py 4
+Usage: railfence.py <key> <filename>
+
+$ ./railfence.py RichesIHold.txt 
+Usage: railfence.py <key> <filename>
+
+$ ./railfence.py 3 nothere.txt
+File not found
+
+$ ./railfence.py 0 RichesIHold.txt 
+Key must be positive
+
+$ ./railfence.py a RichesIHold.txt 
+Key must be an integer
