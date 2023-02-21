@@ -1,0 +1,34 @@
+# success
+$ ./temp_conv.py 
+Enter a temperature to convert (e.g. 45F, 10c, etc.): 0c
+The temperature is 32.0 degrees Fahrenheit.
+
+$ ./temp_conv.py 
+Enter a temperature to convert (e.g. 45F, 10c, etc.): 0c
+The temperature is 32.0 degrees Fahrenheit.
+
+$ ./temp_conv.py 
+Enter a temperature to convert (e.g. 45F, 10c, etc.): 32f
+The temperature is 0.0 degrees Celsius.
+
+$ ./temp_conv.py
+Enter a temperature to convert (e.g. 45F, 10c, etc.): 32F
+The temperature is 0.0 degrees Celsius.
+
+# failure
+
+$ ./temp_conv.py 
+Enter a temperature to convert (e.g. 45F, 10c, etc.): 65
+Invalid units, please use C, c, F, or f.
+
+$ ./temp_conv.py 
+Enter a temperature to convert (e.g. 45F, 10c, etc.): 22T
+Invalid units, please use C, c, F, or f.
+
+$ ./temp_conv.py 
+Enter a temperature to convert (e.g. 45F, 10c, etc.): f
+Invalid temperature, please use a number followed by a unit.
+
+$ ./temp_conv.py 
+Enter a temperature to convert (e.g. 45F, 10c, etc.): 123ff
+Invalid temperature, please use a number followed by a unit.
