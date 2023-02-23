@@ -47,6 +47,7 @@ int main() {
 
   // make sure the list is empty to avoid memory leaks
   purge(list);
+  free(list);
   return 0;
 }
 
@@ -63,7 +64,7 @@ void *thread1(void *arg) {
     printf("T1: inserted %d\n", i);
     pthread_mutex_unlock(&list_mutex);
   }
-  
+
   // wait for thread 2 to be ready
   wait_for_action();
   // signal to delete 3
@@ -93,12 +94,12 @@ void *thread1(void *arg) {
     }
 
     // don't keep adding data if all the requests have been processed
-    if (check_14 == 1  && check_3 == 1) {
+    if (check_14 == 1 && check_3 == 1) {
       printf("T1: Final list length %d\n", i);
       break;
     }
   }
-  
+
   // wait for thread 2 to be ready
   wait_for_action();
   // signal to purge the list and exit
@@ -111,7 +112,7 @@ void *thread1(void *arg) {
 
 void wait_for_action() {
   while (action != -1) {
-   sleep(0.01);
+    sleep(0.01);
   }
 }
 
@@ -128,34 +129,34 @@ void signal_action(int a, int d) {
 // represents a user of the data
 void *thread2(void *arg) {
   for (;;) {
-   // signal that the request has been processed
-   pthread_mutex_lock(&action_mutex);
-   action = -1;
-   pthread_mutex_unlock(&action_mutex);
+    // signal that the request has been processed
+    pthread_mutex_lock(&action_mutex);
+    action = -1;
+    pthread_mutex_unlock(&action_mutex);
 
-   // wait for a data request
-   pthread_mutex_lock(&condition_mutex);
-   pthread_cond_wait(&condition_cond, &condition_mutex);
-   pthread_mutex_unlock(&condition_mutex);
-   printf("T2: got a request\n");
-   // get the action and data
-   pthread_mutex_lock(&action_mutex);
-   pthread_mutex_lock(&data_mutex);
-   int a = action;
-   int d = data;
-   pthread_mutex_unlock(&data_mutex);
-   pthread_mutex_unlock(&action_mutex);
+    // wait for a data request
+    pthread_mutex_lock(&condition_mutex);
+    pthread_cond_wait(&condition_cond, &condition_mutex);
+    pthread_mutex_unlock(&condition_mutex);
+    printf("T2: got a request\n");
+    // get the action and data
+    pthread_mutex_lock(&action_mutex);
+    pthread_mutex_lock(&data_mutex);
+    int a = action;
+    int d = data;
+    pthread_mutex_unlock(&data_mutex);
+    pthread_mutex_unlock(&action_mutex);
 
-   // print the action and data
-   printf("T2: action is %d\n", a);
-   printf("T2: data is %d\n", d);
+    // print the action and data
+    printf("T2: action is %d\n", a);
+    printf("T2: data is %d\n", d);
 
-   // perform the action
-   pthread_mutex_lock(&list_mutex);
-   // sleep to simulate processing
-   sleep(1);
-   // exit if the action is to purge
-   if (a == 2) {
+    // perform the action
+    pthread_mutex_lock(&list_mutex);
+    // sleep to simulate processing
+    sleep(1);
+    // exit if the action is to purge
+    if (a == 2) {
       printf("T2: purging list\n");
       purge(list);
       pthread_mutex_unlock(&list_mutex);
