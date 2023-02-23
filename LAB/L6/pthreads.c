@@ -24,8 +24,6 @@ pthread_mutex_t data_mutex = PTHREAD_MUTEX_INITIALIZER;
 pthread_mutex_t action_mutex = PTHREAD_MUTEX_INITIALIZER;
 pthread_mutex_t condition_mutex = PTHREAD_MUTEX_INITIALIZER;
 pthread_cond_t condition_cond = PTHREAD_COND_INITIALIZER;
-pthread_mutex_t ready_mutex = PTHREAD_MUTEX_INITIALIZER;
-pthread_cond_t ready_cond = PTHREAD_COND_INITIALIZER;
 
 void *thread1(void *arg);
 void *thread2(void *arg);
