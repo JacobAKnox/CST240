@@ -38,7 +38,7 @@ int main() {
   list->tail = NULL;
 
   // start the threads
-  pthread_t t1, t2, t3;
+  pthread_t t1, t2;
   pthread_create(&t1, NULL, thread1, NULL);
   pthread_create(&t2, NULL, thread2, NULL);
   // wait for the threads to finish
