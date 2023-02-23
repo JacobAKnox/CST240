@@ -63,17 +63,12 @@ void *thread1(void *arg) {
     printf("T1: inserted %d\n", i);
     pthread_mutex_unlock(&list_mutex);
   }
-  // sleep to simulate waiting for a request
-  //sleep(1);
   
   // wait for thread 2 to be ready
   wait_for_action();
   // signal to delete 3
   signal_action(1, 3);
   printf("T1: sent signal to delete 3\n");
-
-  // sleep to simulate waiting for more data
-  sleep(1);
 
   // add more data
   for (i = 10; i < 20000; i++) {
