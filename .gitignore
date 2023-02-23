@@ -4,6 +4,7 @@
 *.old
 *.zip
 */.vscode
-*makefile
 LAB/L2/encryption
 Homework/HW3/BIN_READER
+test/*
+LAB/L6/pthreads

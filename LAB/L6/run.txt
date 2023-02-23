@@ -1,0 +1,34 @@
+$ ./pthreads
+T1: inserted 0
+T1: inserted 1
+T1: inserted 2
+T1: inserted 3
+T1: inserted 4
+T1: inserted 5
+T1: inserted 6
+T1: inserted 7
+T1: inserted 8
+T1: inserted 9
+T1: sent signal to delete 3
+T2: got a request
+T2: action is 1
+T2: data is 3
+T2: deleting 3
+T1: inserted up to 10
+T1: sent signal to check if 3 is in the list
+T2: got a request
+T2: action is 0
+T2: data is 3
+T1: inserted up to 20
+T2: 3 is not in the list
+T1: sent signal to delete 14
+T1: Final list length 29
+T2: got a request
+T2: action is 1
+T2: data is 14
+T2: deleting 14
+T1: sent signal to purge the list and exit
+T2: got a request
+T2: action is 2
+T2: data is 0
+T2: purging list
