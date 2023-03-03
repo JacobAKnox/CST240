@@ -1,0 +1,45 @@
+Given program:
+
+$ time ./rsa_en_dec 
+Result is 587185519
+
+real	0m31.922s
+user	0m31.919s
+sys	0m0.000s
+
+
+Rev a:
+$ ./run.sh 
+cc     rsa_rev_a.c   -o rsa_rev_a
+Result is 71567421
+Result is 265393565
+Result is -249331293
+Result is 474108409
+Result is 587185519
+Result is 136607099
+Result is 105904807
+Result is 375418069
+Result is -480051991
+Result is -591194159
+
+real	5m19.086s
+user	5m19.069s
+sys	0m0.004s
+
+
+Rev b:
+Result is -249331293
+Result is 265393565
+Result is 105904807
+Result is 71567421
+Result is 136607099
+Result is 375418069
+Result is -591194159
+Result is 587185519
+Result is 474108409
+Result is -480051991
+
+real	0m21.719s
+user	2m50.032s
+sys	0m0.004s
+
