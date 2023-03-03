@@ -8,3 +8,8 @@ LAB/L2/encryption
 Homework/HW3/BIN_READER
 test/*
 LAB/L6/pthreads
+InClass/Week8/MultClient
+.gitignore
+Quiz8/QuizClient
+Quiz8/QuizServer
+InClass/Week8/MultClientHndlr

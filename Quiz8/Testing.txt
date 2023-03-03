@@ -1,0 +1,23 @@
+Jacob Knox CST240 Week 8 Quiz
+3/1/2023
+
+Fixes:
+Line 28: match the port number to the client, 2000 
+Line 30: accept from any ip address, INADDR_ANY
+Lines 34-37: Bind to the socket, this was not done in the original code
+
+Client: 
+$ ./runclient.sh 
+Socket created successfully
+Connected with server successfully
+Enter message: test
+Server's response: This is the server's message.
+
+Server:
+
+$ ./runserver.sh 
+Socket created successfully
+
+Listening for incoming connections.....
+Client connected at IP: 127.0.0.1 and port: 36318
+Msg from client: test
