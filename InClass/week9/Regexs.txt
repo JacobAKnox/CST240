@@ -11,8 +11,8 @@ Match: 123, abc, 123abc, abc123, abc_123
 Not Match: 12, abcdefghijklmnop, 123!
 
 /([\w\-]+)\s*,\s*(\w+)\s*/
-Meta: (, ), {, }, \s, \w, +, *
-Literals: -
+Meta: (, ), {, }, +, *
+Literals: -, \w, \s
 Match: "te-st,abc"
 No Match: "te-st abc"
 
