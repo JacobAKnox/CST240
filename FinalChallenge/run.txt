@@ -1,0 +1,55 @@
+Client:
+$ ./Client
+Sending: 3
+Received: fizz
+Correct response: fizz
+Sending: 5
+Received: buzz
+Correct response: buzz
+Sending: 12
+Received: fizz
+Correct response: fizz
+Sending: 7
+Received: 7
+Correct response: 7
+Sending: 15
+Received: fizzbuzz
+Correct response: fizzbuzz
+Sending: 13
+Received: 13
+Correct response: 13
+Sending: 1
+Received: 1
+Correct response: 1
+Sending: 10
+Received: buzz
+Correct response: buzz
+
+
+Server:
+$ ./Server
+Waiting for connection...
+Connection accepted
+First message: 3:fizz
+Second message: 5:buzz
+First: 3, Second: 5
+First string: fizz, Second string: buzz
+Received: 3
+Sending: fizz
+Received: 5
+Sending: buzz
+Received: 12
+Sending: fizz
+Received: 7
+Sending: 7
+Received: 15
+Sending: fizzbuzz
+Received: 13
+Sending: 13
+Received: 1
+Sending: 1
+Received: 10
+Sending: buzz
+Received: -1
+Closing socket
+
