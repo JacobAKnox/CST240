@@ -1,0 +1,23 @@
+For each regular expression, do the following:
+    1) Identify all the meta characters.
+    2) Identify all the literals.
+    3) Give an example of a string that MATCHES the regular expression.
+    4) Give an example of a similar string that does NOT match the regular expression.
+
+/^[a-zA-Z0-9_-]{3,16}$/
+Meta: ^, $, {, }, [, ], -
+Literals: a-z, A-Z, 0-9, _, -
+Match: 123, abc, 123abc, abc123, abc_123
+Not Match: 12, abcdefghijklmnop, 123!
+
+/([\w\-]+)\s*,\s*(\w+)\s*/
+Meta: (, ), {, }, \s, \w, +, *
+Literals: -
+Match: "te-st,abc"
+No Match: "te-st abc"
+
+/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$^&*()_-]).{8,18}$/
+Meta: ^, $, {, }, (, ), ?=, ., *, +, [, ]
+Literals: a-z, A-Z, 0-9, !@#$^&*()_-
+Match: "1aB!12345"
+No Match: "1aB12345"
