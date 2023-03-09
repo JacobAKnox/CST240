@@ -1,0 +1,4 @@
+I've provided a list of phone numbers.
+use sed and regex to format all the phone numbers to the proper format and
+add them to an output file. 
+Proper format (xxx) xxx-xxxx
