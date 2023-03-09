@@ -1,0 +1,13 @@
+Create a server that responds to the provided client.
+The client will send two strings formatted as follows:
+    <num>:<string>
+Then it will send some number for integers as strings followed by -1.
+The server should respond by returning the first string if the number
+is a multiple of the first number, the second string if the number is a
+multiple of the second number, and the first and second string if the
+number is a multiple of both. If the number is not a multiple of either
+number, the server should return the number as a string.
+Stop when you recieve -1.
+(play fizzbuzz with the client using arbitary strings and numbers)
+
+You do not need to validate the input from the client.
