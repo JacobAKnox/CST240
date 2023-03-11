@@ -1,0 +1,42 @@
+Success:
+Server:
+$ ./server 8888
+Waiting for connection...
+Here is the message: test
+
+Client:
+$ ./client 127.0.0.1 8888
+Connecting to server...
+Please enter the message: test
+I got your message
+
+Testing:
+Client missing args:
+$ ./client 
+usage ./client hostname port
+
+$ ./client 127.0.0.1
+usage ./client hostname port
+
+$ ./client 8888
+usage ./client hostname port
+
+Client invalid port:
+$ ./client 127.0.0.1 a
+Connecting to server...
+ERROR connecting: Connection refused
+
+Client invalid hostname:
+$ ./client google.com 8888
+Connecting to server...
+ERROR connecting: Network is unreachable
+
+Server missing args:
+$ ./server
+ERROR, no port provided
+
+Client incorrect port:
+(server on 8888)
+$ ./client 127.0.0.1 8080
+Connecting to server...
+ERROR connecting: Connection refused
